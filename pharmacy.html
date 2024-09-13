@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital - Pharmacy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVO</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="pharmacy-form.css">
+    <link rel="shortcut icon" type="x-ixon" href="images/logo.png">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consultings</a></li>
+                <li><a href="pharmacy.html" class="active">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="pha-form">
+        <div class="container">
+            <div class="main">
+                <section class="content">
+                    <form action="#" method="POST">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        
+                        
+                        <label for="medicine">Select Medicine:</label>
+                        <br>
+                        <div class="select-container">
+                            <select class="select-box" name="medicine" required>
+                                <option value="Medicine 1">Medicine 1</option>
+                                <option value="Medicine 2">Medicine 2</option>
+                                <option value="Medicine 3">Medicine 3</option>
+                            </select>
+                        </div>
+                        <br>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+
+                        <button type="submit" >Order Now</button>
+                    </form>
+                </section>
+                <div class="form-img">
+                    <h1 class="consultation-text"> Let's get you some medicine</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>At Revo, our commitment is to transform the healthcare sector by providing new solutions that give power to both patients and healthcare professionals. Our goal is to connect advanced medical technology with individualized care, so that everyone can receive top-quality health services.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consulting.html">Consultation</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: revo@hospital.com</p>
+                <p>Phone: 0112 765 2938</p>
+                <p>Address: 11/B John Keels Mawatha, Bambalapitiya</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.twitter.com"><img src="images/icons/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/icons/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com"><img src="images/icons/linkedin-icon.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.facebook.com"><img src="images/icons/facebook-icon.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

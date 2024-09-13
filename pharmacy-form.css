@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    background-color: #c1f1fd;
+}
+.pha-form{
+    position: relative;
+    min-height: 50vh;
+    z-index: 0;
+    padding: 20px;
+    justify-content: center;
+    display: grid;
+    font-family: 'poppins',sans-serif;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 35px;
+    max-height: 900px;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pha-form h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+
+}
+.pha-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.main{
+    box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 0px;
+}
+.content{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-img{
+    flex-basis: 50%;
+    background: #6edd91;
+    background-size: cover;
+    border-top-right-radius: 8px;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+    margin-left: 0;
+}
+.form-img h1{
+    text-align: left;
+}
+button,input{
+    border-radius: 35px;
+}
+
+.pha-form input{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #000000;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    border: solid 2px white;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #f7fafc;
+    transition: border 0.5s ease;
+}
+.pha-form input:focus{
+    color:black;
+    background: transparent;
+    border: 2px solid #00eeff;
+}
+
+.pha-form button{
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    background: white;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    margin-top: 30px;
+}
+
+.pha-form button:hover{
+    transition: background 0.3s ease;
+    background: #00eeff;
+    color: white;
+}
+
+.select-container{
+    display: flex;
+}
+.select-box{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    height: 45px;
+    border: solid black 1px;
+    background-color: #f7fafc;
+}
+.select-box option {
+    background-color: #f7fafc;
+}
+.select-box option:hover{
+    color: #6edd91;
+}
+@media(max-width:768px){
+    .pha-form .main{
+        flex-direction: column;
+    }
+    .pha-form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    footer{
+        margin-top: 250px;
+    }
+}
